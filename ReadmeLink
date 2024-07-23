@@ -4,3 +4,7 @@ PVC refernce
 
 NFS Server build , access in kubernets as extenal nsf server in kube pods
 https://dzone.com/articles/dynamic-nfs-provisioning-in-red-hat-openshift
+
+
+postgress 
+https://www.digitalocean.com/community/tutorials/how-to-deploy-postgres-to-kubernetes-cluster
