@@ -1,0 +1,62 @@
+Kubernetes is a complex ecosystem with many associated buzzwords that reflect the various concepts, tools, and practices within the Kubernetes environment. Here are some common Kubernetes buzzwords along with example scenarios that illustrate their use:
+
+1. Cluster
+Definition: A Kubernetes cluster consists of a set of nodes that run containerized applications managed by Kubernetes. A cluster typically includes a master node (or control plane) and worker nodes.
+Scenario: A company sets up a Kubernetes cluster to deploy and manage their microservices architecture. The control plane is responsible for maintaining the desired state of the system, while worker nodes run the application containers.
+2. Pod
+Definition: The smallest deployable unit in Kubernetes, a pod is a single instance of a running process in your cluster. A pod can contain one or more containers that share the same network namespace.
+Scenario: A developer deploys a web application in Kubernetes by creating a pod that includes both the web server container and a sidecar container that handles logging.
+3. Namespace
+Definition: Namespaces are a way to divide cluster resources between multiple users. They provide a scope for names and are useful for managing environments like dev, test, and production within the same cluster.
+Scenario: An organization uses separate namespaces for development, staging, and production environments. This separation ensures that resources in one environment don’t interfere with those in another.
+4. Service
+Definition: A Kubernetes Service is an abstraction that defines a logical set of pods and a policy by which to access them, typically using a stable IP address and DNS name.
+Scenario: To expose a group of web server pods to external traffic, a company defines a Kubernetes Service that balances the load and provides a stable endpoint for clients to connect to.
+5. Ingress
+Definition: Ingress is an API object that manages external access to services in a cluster, typically HTTP. It provides load balancing, SSL termination, and name-based virtual hosting.
+Scenario: A team deploys an Ingress controller to route traffic from different domains (e.g., api.example.com and web.example.com) to different services within the Kubernetes cluster.
+6. ConfigMap
+Definition: ConfigMaps are used to store non-confidential configuration data in key-value pairs. They are often used to pass configuration data to applications in a Kubernetes cluster.
+Scenario: A developer needs to configure an application to use different API keys and environment settings in different environments. They create ConfigMaps for dev, staging, and production and mount them into the respective pods.
+7. Secret
+Definition: Secrets are used to store sensitive data, such as passwords, OAuth tokens, and SSH keys, in a way that is more secure than using plain text.
+Scenario: An application requires access to a database that is secured with a username and password. The credentials are stored in a Kubernetes Secret, which is then mounted into the application pod, ensuring that sensitive information is not exposed in the pod’s configuration files.
+8. Deployment
+Definition: A Kubernetes Deployment manages the desired state of a set of pods, providing features like rolling updates, rollbacks, and scaling.
+Scenario: A team uses a Deployment to manage the rollout of a new version of their web application. The Deployment ensures that the update is applied gradually, minimizing downtime and allowing for easy rollback if issues arise.
+9. StatefulSet
+Definition: StatefulSet is a workload API object used to manage stateful applications, providing guarantees about the ordering and uniqueness of pods.
+Scenario: A database cluster that requires each instance to have a stable network identity and persistent storage is deployed using a StatefulSet. This ensures that even if pods are rescheduled, they maintain their identity and storage.
+10. DaemonSet
+Definition: A DaemonSet ensures that all (or some) nodes run a copy of a pod. As nodes are added to the cluster, pods are automatically added to them.
+Scenario: A company deploys a logging agent on every node in the cluster using a DaemonSet. This ensures that logs from all applications across all nodes are collected consistently.
+11. ReplicaSet
+Definition: A ReplicaSet ensures that a specified number of pod replicas are running at any given time. It's often used by Deployments to maintain pod availability.
+Scenario: An e-commerce website needs to ensure high availability of its shopping cart service. A ReplicaSet is used to maintain three replicas of the service, ensuring that traffic can be handled even if some pods fail.
+12. Helm
+Definition: Helm is a package manager for Kubernetes, used to define, install, and upgrade complex Kubernetes applications using Helm charts.
+Scenario: A DevOps team uses Helm to deploy a complex application that includes multiple services, databases, and dependencies. Helm charts simplify the deployment by encapsulating all resources and configurations into a single package.
+13. PersistentVolume (PV) and PersistentVolumeClaim (PVC)
+Definition: PersistentVolumes (PVs) are a way to abstract storage resources in a cluster, while PersistentVolumeClaims (PVCs) are requests for storage by users.
+Scenario: An application that requires persistent storage for a database is deployed. The database pod requests storage by creating a PVC, which is then bound to a PV provisioned by the cluster’s storage provider.
+14. Node
+Definition: A node is a worker machine in Kubernetes, which can be either a virtual or physical machine, where pods are scheduled.
+Scenario: A Kubernetes cluster is composed of several nodes, each running a set of pods. The Kubernetes scheduler determines on which node each pod should run based on resource availability and constraints.
+15. Kubelet
+Definition: The kubelet is an agent that runs on each node in the cluster. It ensures that containers are running in a pod and reports the status to the Kubernetes control plane.
+Scenario: When a pod is scheduled on a node, the kubelet on that node is responsible for starting and maintaining the containers within that pod, reporting back to the control plane about the pod’s health and status.
+16. Service Mesh
+Definition: A service mesh is a dedicated infrastructure layer for managing service-to-service communication within a microservices architecture. Istio is a popular example.
+Scenario: A microservices-based application running in Kubernetes requires secure, reliable, and observable communication between services. The company implements Istio as a service mesh to handle traffic management, security (mTLS), and monitoring.
+17. Horizontal Pod Autoscaler (HPA)
+Definition: HPA automatically scales the number of pod replicas based on observed CPU utilization or other metrics.
+Scenario: During peak traffic times, the user load on a web application increases. HPA automatically scales out the number of pods to handle the increased load and scales them back down during off-peak times.
+18. Vertical Pod Autoscaler (VPA)
+Definition: VPA automatically adjusts the resource requests and limits (CPU, memory) of pods based on actual usage.
+Scenario: A machine learning application has varying resource requirements depending on the workload. VPA adjusts the resources allocated to the pods dynamically, ensuring they have enough CPU and memory without wasting resources.
+19. Kubectl
+Definition: kubectl is the command-line tool used to interact with Kubernetes clusters, allowing you to manage cluster resources, deploy applications, and inspect the state of your environment.
+Scenario: A developer uses kubectl to deploy a new version of an application, inspect the status of pods, and troubleshoot any issues by checking logs and events.
+20. Operator
+Definition: An Operator is a method of packaging, deploying, and managing a Kubernetes application. It uses custom resources to manage applications and their components.
+Scenario: A team develops a Kubernetes Operator to manage a complex database system that requires frequent backups, scaling, and custom configuration. The Operator automates these tasks, reducing manual intervention.
