@@ -21,3 +21,6 @@ https://medium.com/containerum/how-to-make-and-share-your-own-helm-package-50ae4
 
 read valut from lamda function
 https://towardsaws.com/integrating-hashicorp-vault-with-aws-lambda-using-terraform-dfe199b0dc55
+
+AWS Terraform Autoscaling Group With ALB Deployment Tutorial
+https://devopscube.com/terraform-autoscaling-group/
