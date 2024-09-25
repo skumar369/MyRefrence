@@ -1,0 +1,2 @@
+Baston Host, EKS and rancher using terraform 
+https://awstip.com/deploy-rancher-on-aws-eks-using-terraform-helm-charts-4141ce9c7a45
