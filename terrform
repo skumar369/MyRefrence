@@ -1,0 +1,3 @@
+
+Terraform : S3, bucket and dynamodb as backend module
+https://aws.plainenglish.io/creating-a-terraform-module-for-s3-remote-backend-with-dynamodb-state-locking-17f1df067a8d
