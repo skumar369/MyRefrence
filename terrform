@@ -1,3 +1,6 @@
 
 Terraform : S3, bucket and dynamodb as backend module
 https://aws.plainenglish.io/creating-a-terraform-module-for-s3-remote-backend-with-dynamodb-state-locking-17f1df067a8d
+
+Steps to deploy website using terraform
+https://aws.plainenglish.io/cloud-resume-challenge-full-tutorial-with-terraform-github-actions-and-aws-1721b98b9e5d
