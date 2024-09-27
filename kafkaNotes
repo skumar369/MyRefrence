@@ -2,3 +2,5 @@ https://cmakkaya.medium.com/message-queue-mq-systems-2-installing-and-using-apac
 
 Refrence MSK,EKS and AWS with confluent kafka
 https://programmaticponderings.com/2021/08/11/hydrating-a-data-lake-using-query-based-cdc-with-apache-kafka-connect-and-kubernetes-on-aws/
+
+okta integration with EKS via OIDC provider
