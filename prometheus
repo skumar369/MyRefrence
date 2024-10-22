@@ -7,3 +7,6 @@ https://devapo.io/blog/technology/how-to-set-up-prometheus-on-kubernetes-with-he
 
 ansiable , grafana , node-exporter 
 https://medium.com/devops4me/install-grafana-prometheus-node-exporter-using-ansible-1771e649a4b3
+
+using scripts install , graphana , promothes and node_exporter
+https://github.com/singhragvendra503/install_promethes_grafana_node-exporter
