@@ -5,5 +5,5 @@ https://www.macstadium.com/blog/how-to-k8s-getting-started-with-prometheus-and-g
 refrenvce 
 https://devapo.io/blog/technology/how-to-set-up-prometheus-on-kubernetes-with-helm-charts/#Access-to-Prometheus-UI
 
-ansiable , node-exporter 
+ansiable , grafana , node-exporter 
 https://medium.com/devops4me/install-grafana-prometheus-node-exporter-using-ansible-1771e649a4b3
