@@ -10,3 +10,6 @@ https://medium.com/devops4me/install-grafana-prometheus-node-exporter-using-ansi
 
 using scripts install , graphana , promothes and node_exporter
 https://github.com/singhragvendra503/install_promethes_grafana_node-exporter
+
+Anymachine install node-exporter 
+https://medium.com/@bharath.vadithya/instructions-for-installing-and-setting-up-node-exporter-in-any-machine-using-ansible-playbook-573c1427e218
