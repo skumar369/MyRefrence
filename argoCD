@@ -10,4 +10,5 @@ a. cluster-admin privileges: https://raw.githubusercontent.com/argoproj/argo-cd/
 
 b. namespace level privileges: https://github.com/argoproj/argo-cd/raw/stable/manifests/namespace-install.yaml
 
+https://killercoda.com/mabusaa/course/argocd-endusers-scenarios/00-argocd-playground
 
