@@ -1,0 +1,13 @@
+You need to create a namespace for argocd.
+
+kubectl create ns argocd
+
+and then choose one of the below options :
+
+1. Non-HA:
+
+a. cluster-admin privileges: https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+b. namespace level privileges: https://github.com/argoproj/argo-cd/raw/stable/manifests/namespace-install.yaml
+
+
